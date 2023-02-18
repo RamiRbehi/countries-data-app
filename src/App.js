@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Country from './Components/Country';
 import Countries from './Components/Countries';
@@ -7,7 +7,7 @@ import { ThemeProvider } from './Components/ThemeContext';
 
 function App() {
   return (
-      <BrowserRouter>
+      <HashRouter>
     <ThemeProvider>
     <div className="App">
       <Navbar/>
@@ -18,7 +18,7 @@ function App() {
         
     </div>
     </ThemeProvider>
-        </BrowserRouter>
+        </HashRouter>
   );
 }
 
